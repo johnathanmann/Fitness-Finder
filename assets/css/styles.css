@@ -1,0 +1,13 @@
+:root{
+    --green: #6dad6d;
+}
+
+.navbar {
+    background-color: var(--green);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 0px 20px;
+}
