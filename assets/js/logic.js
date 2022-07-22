@@ -6,7 +6,7 @@ const options = {
 	}
 };
 
-fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPart/neck', options)
+fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPart/' + selection + options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
