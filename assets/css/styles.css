@@ -1,13 +1,62 @@
 :root{
-    --green: #6dad6d;
+    --red: #ad6d6d;
+    --dark: #3f3f3f;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .navbar {
-    background-color: var(--green);
+    background-color: var(--red);
 }
 
 .navbar a{
     text-decoration: none;
     color: #FFF;
     padding: 0px 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.display{
+    display: block;
+}
+
+h1{
+    color: var(--red);
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: var(--red);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid var(--red);
+    border-radius: 15%;
+    margin: 4px 4px 0px 0px;
+    height: 40px;
+    width: 40px;
+}
+
+input[type="radio"]:active {
+    background-color: var(--red);
+}
+
+#selectBodypart{
+    padding: 20px 0px;
+}
+
+label{
+    font-size: 20px;
+    padding-top: 8px;
+    color: var(--dark);
+}
+
+#displayBodypart{
+    text-transform: capitalize;
 }
