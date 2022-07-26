@@ -20,12 +20,14 @@ back.click(function (){
         var response = response[Math.floor(Math.random()* response.length)];
         console.log(response);
         console.log(response.name);
+
 		// Hide body part seletion page
 		$('#selectBodypart').addClass('hidden');
         $('#selectBodypart').removeClass('display');
 		$('#displayBodypart').addClass('display');
         $('#displayBodypart').removeClass('hidden');
 		// Display workout information
+		var bodyCard = $('#bodyCard');
 		var workoutGif = $('#workoutGif');
 		workoutGif.attr('src', response.gifUrl);
 		var workoutName = $('#workoutName');
@@ -34,6 +36,16 @@ back.click(function (){
 		equipmentBody.append(response.equipment);
 		var equipmentBody = $('#equipmentTarget');
 		equipmentTarget.append(response.target);
+		var heart = $('#likeBtn');
+		var list = $('#list');
+		heart.click(function (){
+			heart.removeClass('fa-regular');
+			heart.addClass('fa-solid')
+			var card = $('#bodyCard').html();
+			console.log(card);
+			localStorage.setItem('card', JSON.stringify(card));
+			
+		});
     });
 });
 
@@ -73,7 +85,29 @@ chest.click(function (){
 		equipmentBody.append(response.equipment);
 		var equipmentBody = $('#equipmentTarget');
 		equipmentTarget.append(response.target);
+		var heart = $('#likeBtn');
     });
 });
 
 
+
+
+		// // Hide body part seletion page
+		// $('#selectBodypart').addClass('hidden');
+        // $('#selectBodypart').removeClass('display');
+		// $('#displayBodypart').addClass('display');
+        // $('#displayBodypart').removeClass('hidden');
+		// // Display workout information
+		// var displayBodypartCard = $('#displayBodypartCard');
+		// var displayBodypartCard1 = $('#displayBodypartCard1');
+		// var exerciseInfo = $("<img id='workoutGif' class='img-fluid' src='"+ response.gifUrl+"'><h5><span id='workoutName' >"+response.name+"</span>&nbsp;&nbsp;<i i id='likeBtn' class='fa-regular fa-heart'></i></h5><p class='card-text'>Equipment: <span id='equipmentBody'>"+response.equipment+"</span></p><p class='card-text'>Target: <span id='equipmentTarget'>"+response.target+"</span></p>");
+
+		// displayBodypartCard.append(exerciseInfo);
+
+		// var heart = $('#likeBtn');
+		// heart.click(function (){
+		// 	heart.removeClass('fa-regular');
+		// 	heart.addClass('fa-solid')
+		// 	var bodyCard = $('#bodyCard');
+		// 	var saved = JSON.stringify(exerciseInfo);
+		// 	console.log(saved);
