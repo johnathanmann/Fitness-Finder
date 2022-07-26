@@ -1,14 +1,10 @@
 :root{
-    --red: #ad6d6d;
+    --blue: #6ca1b6;
     --dark: #3f3f3f;
 }
 
-body{
-    font-family: 'Red Hat Display', sans-serif;
-}
-
 .navbar {
-    background-color: var(--red);
+    background-color: var(--blue);
 }
 
 .navbar a{
@@ -25,18 +21,23 @@ body{
     display: block;
 }
 
-h1{
-    color: var(--red);
+h1, h2, h3, h4, h5, h6{
+    color: var(--blue);
+    font-family: 'Arvo', serif;;
+}
+
+label{
+    font-family: 'Kanit', sans-serif;
 }
 
 input[type="radio"] {
     appearance: none;
     background-color: #fff;
     font: inherit;
-    color: var(--red);
+    color: var(--blue);
     width: 1.15em;
     height: 1.15em;
-    border: 0.1em solid var(--red);
+    border: 0.1em solid var(--blue);
     border-radius: 15%;
     margin: 4px 4px 0px 0px;
     height: 40px;
@@ -44,7 +45,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:active {
-    background-color: var(--red);
+    background-color: var(--blue);
 }
 
 #selectBodypart{
@@ -59,4 +60,9 @@ label{
 
 #displayBodypart{
     text-transform: capitalize;
+}
+
+.card{
+    height: 50vh;
+    width: 80vw;
 }
