@@ -1,13 +1,68 @@
 :root{
-    --green: #6dad6d;
+    --blue: #6ca1b6;
+    --dark: #3f3f3f;
 }
 
 .navbar {
-    background-color: var(--green);
+    background-color: var(--blue);
 }
 
 .navbar a{
     text-decoration: none;
     color: #FFF;
     padding: 0px 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.display{
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--blue);
+    font-family: 'Arvo', serif;;
+}
+
+label{
+    font-family: 'Kanit', sans-serif;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: var(--blue);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid var(--blue);
+    border-radius: 15%;
+    margin: 4px 4px 0px 0px;
+    height: 40px;
+    width: 40px;
+}
+
+input[type="radio"]:active {
+    background-color: var(--blue);
+}
+
+#selectBodypart{
+    padding: 20px 0px;
+}
+
+label{
+    font-size: 20px;
+    padding-top: 8px;
+    color: var(--dark);
+}
+
+#displayBodypart{
+    text-transform: capitalize;
+}
+
+.card{
+    height: 50vh;
+    width: 80vw;
 }
