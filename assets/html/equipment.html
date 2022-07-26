@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Google Fonts -->
+    <!-- Header font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- Container that wil allow user to make their body part selection -->
+    <div class="container display" id="selectEquipment">
+        <div class="row">
+            <h1>Select Equipment:</h1>
+        </div>
+        <div class="row">
+            <input type="radio" id="assisted" name="quipment" class="equipment"  >
+<label >Assisted</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="band" name="equipment"  class="equipment"  >
+            <label >Band</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="barbell"   class="equipment"  >
+            <label >Barbell</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="bodyWeight"   class="equipment"  >
+            <label >Body Weight</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="bosuBall"  class="equipment"  >
+            <label >Bosu Ball</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="cable"   class="equipment"  >
+            <label >Cable</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="dumbbell"   class="equipment"  >
+            <label >Dumbbell</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="ellipticalMachine"   class="equipment"  >
+            <label >Elliptical Machine</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="ezBarbell"   class="equipment"  >
+            <label >Ez Barbell</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="hammer"   class="equipment"  >
+            <label >Hammer</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="kettlebell"   class="equipment"  >
+            <label >Kettlebell</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="leverageMachine"   class="equipment"  >
+            <label >Leverage Machine</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="medicineBall"   class="equipment"  >
+            <label >Medicine Ball</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="olympicBarbell"   class="equipment"  >
+            <label >Olympic Barbell</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="resistanceBand"   class="equipment"  >
+            <label >Resistance Band</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="roller"   class="equipment"  >
+            <label >Roller</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="rope"   class="equipment"  >
+            <label >Rope</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="skiergMachine"   class="equipment"  >
+            <label >Skierg Machine</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="sledMachine"   class="equipment"  >
+            <label >Sled Machine</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="smithMachine"   class="equipment"  >
+            <label >Smith Machine</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="stabilityBall"   class="equipment"  >
+            <label >Stability Ball</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="stationaryBike"   class="equipment"  >
+            <label >Stationary Bike</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="stepmillMachine"   class="equipment"  >
+            <label >Stepmill Machine</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="tire"   class="equipment"  >
+            <label >Tire</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="trapBar"   class="equipment"  >
+            <label >Trap Bar</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="upperBodyErgometer"   class="equipment"  >
+            <label >Upper Body Ergometer</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="weighted"   class="equipment"  >
+            <label >Weighted</label><br>
+        </div>
+        <div class="row">
+            <input type="radio" id="wheelRoller"   class="equipment"  >
+            <label >Wheel Roller</label><br>
+        </div>
+    </div>
+
+    <div class="container hidden" id="displayEquipment">
+        <div class="row">
+            <h1>Random Workout</h1>
+        </div>
+        <div class="card" >
+            <div class="card-body">
+                <img id="workoutGif">
+              <h5 id="workoutName"></h5>
+              <p class="card-text">Equipment: <span id="equipmentBody"></span></p>
+              <p class="card-text">Target: <span id="equipmentTarget"></span></p>
+            </div>
+          </div>
+    </div>
+
+    <!-- Nav bar -->
+    <nav class="navbar fixed-bottom justify-content-center">
+    <a class="navbar-brand" href="../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="navbar-brand" href="favorites.html"><i class="fa-solid fa-heart"></i></a>
+    <a class="navbar-brand" href="map.html"><i class="fa-solid fa-map-location-dot"></i></a>
+  </nav>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9ee8ab9af4.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <!-- Jquery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Local JS -->
+    <script src="../js/logic.js"></script>
+</body>
+</html>
