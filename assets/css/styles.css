@@ -56,11 +56,11 @@ label{
     color: var(--dark);
 }
 
-#displayBodypart{
+.bodyCard{
     text-transform: capitalize;
 }
 
-#displayBodypart h1{
+.bodyCard h1{
     margin: 10px;
 }
 
