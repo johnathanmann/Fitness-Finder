@@ -1,0 +1,59 @@
+header {
+  text-align: center;
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+body {
+  background: url(/assets/images/backgroundcover.png);
+  background-color: #13293d;
+  background-repeat: no-repeat;
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-end;
+}
+.port {
+}
+.box {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  flex: 0 0 200px;
+  margin: 20px;
+  background-color: white;
+}
+.products {
+  flex: 4;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 5px;
+}
+.btn {
+  color: white;
+}
+
+.navbar {
+  background-color: var(--green);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 20px;
+}
