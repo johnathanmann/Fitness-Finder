@@ -13,23 +13,6 @@
     padding: 0px 20px;
 }
 
-.gymSearchHeader {
-    padding: 20px;
-    text-align: center;
-
-}
-
-.gymSearchForm {
-    text-align: center;
-    padding: 15px;
-}
-
-.mapSearchResults {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
 .hidden{
     display: none;
@@ -44,7 +27,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Arvo', serif;;
 }
 
-label{
+label, p{
     font-family: 'Kanit', sans-serif;
 }
 
@@ -87,6 +70,11 @@ label{
     margin: 20px auto;
 }
 
+/* BMI styling */
+
+#inputBmi input{
+    display: inline;
+}
 
 
 

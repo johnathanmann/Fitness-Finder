@@ -46,17 +46,3 @@ back.click(function (){
     });
 });
 
-const bruh = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://maptiles.p.rapidapi.com/en/map/v1/3/6/3.png",
-	"method": "GET",
-	"headers": {
-		"X-RapidAPI-Key": "f7e67ce4d6msh8eac922e7a9ef02p170572jsnd8c44fa6c510",
-		"X-RapidAPI-Host": "maptiles.p.rapidapi.com"
-	}
-};
-
-$.ajax(bruh).done(function (response) {
-	console.log(response);
-});
