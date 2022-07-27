@@ -24,9 +24,14 @@ body {
   min-height: 100vh;
   justify-content: flex-end;
 }
+
 .i {
   width: 100%;
   color: #6ca1b6;
+}
+
+.hidden{
+    display: none;
 }
 .navbar a {
   text-decoration: none;
