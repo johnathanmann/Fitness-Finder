@@ -1,126 +1,120 @@
-:root {
-  --blue: #6ca1b6;
-  --dark: #3f3f3f;
-}
-header {
-  text-align: center;
-  padding: 10px;
-  color: #fff;
-  text-decoration: underline;
-  background-color: #6ca1b6;
-  border-radius: 20px;
+:root{
+    --blue: #6ca1b6;
+    --dark: #3f3f3f;
 }
 
 .navbar {
-  background-color: var(--blue);
-}
-body {
-  background-color: #6ca1b6;
-  background-repeat: no-repeat;
-  font-family: Arial;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-end;
+    background-color: var(--blue);
 }
 
-.i {
-  width: 100%;
-  color: #6ca1b6;
+.navbar a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 0px 20px;
 }
+
 
 .hidden{
     display: none;
 }
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  padding: 0px 20px;
-}
-a.btn {
-  color: #6ca1b6;
-  text-align: center;
-}
-.box {
-  border-radius: 20px;
-  padding: 10px;
-  flex: 0 0 200px;
-  margin: 20px;
-  background-color: white;
-}
-.products {
-  flex: 4;
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-.hidden {
-  display: none;
+
+.display{
+    display: block;
 }
 
-.display {
-  display: block;
+h1, h2, h3, h4, h5, h6{
+    color: var(--blue);
+    font-family: 'Arvo', serif;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--blue);
-  font-family: "Arvo", serif;
-}
-h1 {
-  font-size: 60px;
-  padding-top: 60px;
+label, p, li{
+    font-family: 'Kanit', sans-serif;
 }
 
-label {
-  font-family: "Kanit", sans-serif;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 5px;
-}
 input[type="radio"] {
-  appearance: none;
-  background-color: #fff;
-  font: inherit;
-  color: var(--blue);
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.1em solid var(--blue);
-  border-radius: 15%;
-  margin: 4px 4px 0px 0px;
-  height: 40px;
-  width: 40px;
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: var(--blue);
+    border: 0.1em solid var(--blue);
+    border-radius: 15%;
+    margin: 4px 4px 0px 0px;
+    height: 40px;
+    width: 40px;
 }
 
 input[type="radio"]:active {
-  background-color: var(--blue);
+    background-color: var(--blue);
 }
 
-#selectBodypart {
-  padding: 20px 0px;
+#selectBodypart{
+    padding: 20px 0px 50px 0px;
 }
 
-label {
-  font-size: 20px;
-  padding-top: 8px;
-  color: var(--dark);
+label{
+    font-size: 20px;
+    padding-top: 8px;
+    color: var(--dark);
 }
 
-#displayBodypart {
-  text-transform: capitalize;
+.bodyCard{
+    text-transform: capitalize;
 }
 
-.card {
-  height: 50vh;
-  width: 80vw;
+.bodyCard h1{
+    margin: 10px;
+}
+
+.card{
+    width: 70vw;
+    margin: 20px auto;
+}
+
+/* BMI styling */
+
+#inputBmi input{
+    display: inline;
+}
+
+#bmi{
+    margin:10px 10px;
+}
+
+#bmi input{
+    width: 30vw;
+    margin:10px 10px 0px 0px;
+}
+
+.row{
+    display: flex;
+}
+
+
+#bmiHistory h4{
+    padding-top: 15px;
+}
+
+#bmiHistory ol{
+    list-style: none;
+    padding: 0px;
+}
+
+#bmiHistory li{
+    font-size: 23px;
+}
+
+
+
+@media (max-width: 426px) {
+    .selection h1, .selection h5{
+        margin-left: 20px;
+    }
+    input[type="radio"] {
+        margin: 12px 4px 0px 20px;
+        height: 20px;
+        width: 20px;
+    }
+    #bmi input{
+        width: 70vw;
+    }
 }
