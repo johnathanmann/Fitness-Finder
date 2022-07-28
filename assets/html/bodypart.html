@@ -15,14 +15,14 @@
     <!-- Body font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
     <!-- Local stylesheet -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <!-- Container that wil allow user to make their body part selection -->
-    <div class="container display" id="selectBodypart">
+    <div class="container display selection" id="selectBodypart">
         <div class="row">
             <h1>Select bodypart:</h1>
         </div>
@@ -68,14 +68,16 @@
         </div>
     </div>
 
-    <div class="container hidden" id="displayBodypart">
-        <div class="row">
-            <h1>Random Workout</h1>
+    <div class="container text-center hidden" id="displayBodypart">
+        <div class="row text-center">
+            <div class="col-12"><h1>Random workout:</h1></div>
         </div>
-        <div class="card" >
+<!-- Display workout -->
+        <div class="card bodyCard" >
             <div class="card-body">
-                <img id="workoutGif">
-              <h5 id="workoutName"></h5>
+                <img id="workoutGif" class="img-fluid">
+                <!-- Display workout name and allow them to save it with like button -->
+              <h5><span id="workoutName" ></span>&nbsp;&nbsp;<i i id="likeBtn" class="fa-regular fa-heart"></i></h5>
               <p class="card-text">Equipment: <span id="equipmentBody"></span></p>
               <p class="card-text">Target: <span id="equipmentTarget"></span></p>
             </div>
@@ -84,9 +86,9 @@
 
     <!-- Nav bar -->
     <nav class="navbar fixed-bottom justify-content-center">
-    <a class="navbar-brand" href="../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="navbar-brand" href="../../index.html"><i class="fa-solid fa-house"></i></i></a>
     <a class="navbar-brand" href="favorites.html"><i class="fa-solid fa-heart"></i></a>
-    <a class="navbar-brand" href="map.html"><i class="fa-solid fa-map-location-dot"></i></a>
+    <a class="navbar-brand" href="bmi.html"><i class="fa-solid fa-weight-scale"></i></a>
   </nav>
 
     <!-- Font Awesome -->
@@ -98,6 +100,6 @@
      <!-- Jquery -->
      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Local JS -->
-    <script src="../js/logic.js"></script>
+    <script src="../js/bodypart.js"></script>
 </body>
 </html>
