@@ -1,18 +1,8 @@
+/* Styling for everything besides homepage */
 :root{
     --blue: #6ca1b6;
     --dark: #3f3f3f;
 }
-
-.navbar {
-    background-color: var(--blue);
-}
-
-.navbar a{
-    text-decoration: none;
-    color: #FFF;
-    padding: 0px 20px;
-}
-
 
 .hidden{
     display: none;
@@ -31,6 +21,18 @@ label, p, li{
     font-family: 'Kanit', sans-serif;
 }
 
+/* Nav styling */
+.navbar {
+    background-color: var(--blue);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 0px 20px;
+}
+
+/* Styling for selection pages */
 input[type="radio"] {
     appearance: none;
     background-color: #fff;
@@ -47,7 +49,7 @@ input[type="radio"]:active {
     background-color: var(--blue);
 }
 
-#selectBodypart{
+.selection, #bmi{
     padding: 20px 0px 50px 0px;
 }
 
@@ -76,9 +78,6 @@ label{
     display: inline;
 }
 
-#bmi{
-    margin:10px 10px;
-}
 
 #bmi input{
     width: 30vw;
@@ -103,6 +102,12 @@ label{
     font-size: 23px;
 }
 
+.btn{
+    background-color: var(--blue);
+    border: none;
+
+}
+
 
 
 @media (max-width: 426px) {
@@ -116,5 +121,9 @@ label{
     }
     #bmi input{
         width: 70vw;
+    }
+
+    #bmi{
+        margin: 10px 0px 0px 10px;
     }
 }

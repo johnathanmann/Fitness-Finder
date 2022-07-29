@@ -81,14 +81,17 @@ document.addEventListener("DOMContentLoaded", function() {
     window.localStorage.getItem('tire');
     var savedCard = JSON.parse(window.localStorage.getItem('tire'));
     saved.append(savedCard);
-    window.localStorage.getItem('trapBar');
-    var savedCard = JSON.parse(window.localStorage.getItem('trapBar'));
-    saved.append(savedCard);
     window.localStorage.getItem('weighted');
     var savedCard = JSON.parse(window.localStorage.getItem('weighted'));
     saved.append(savedCard);
     window.localStorage.getItem('wheelRoller');
     var savedCard = JSON.parse(window.localStorage.getItem('wheelRoller'));
+    saved.append(savedCard);
+    window.localStorage.getItem('leverageMachine');
+    var savedCard = JSON.parse(window.localStorage.getItem('leverageMachine'));
+    saved.append(savedCard);
+    window.localStorage.getItem('medicineBall');
+    var savedCard = JSON.parse(window.localStorage.getItem('medicineBall'));
     saved.append(savedCard);
 });
 
