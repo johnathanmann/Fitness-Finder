@@ -57,12 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.localStorage.getItem('kettlebell');
     var savedCard = JSON.parse(window.localStorage.getItem('kettlebell'));
     saved.append(savedCard);
-    window.localStorage.getItem('leverageMachine');
-    var savedCard = JSON.parse(window.localStorage.getItem('leverageMachine'));
-    saved.append(savedCard);
-    window.localStorage.getItem('medicineBall');
-    var savedCard = JSON.parse(window.localStorage.getItem('medicineBall'));
-    saved.append(savedCard);
     window.localStorage.getItem('olympicBarbell');
     var savedCard = JSON.parse(window.localStorage.getItem('olympicBarbell'));
     saved.append(savedCard);
