@@ -18,12 +18,12 @@ I want to change up my daily workout by finding random workouts that apply to my
 
 ## Credits
 
-Collaborators:
-<a href="https://github.com/johnathanmann">Johnathan Mann</a>
-<a href="https://github.com/AndresR1010">Andres Rosales</a>
+Collaborators:<br>
+<a href="https://github.com/johnathanmann">Johnathan Mann</a><br>
+<a href="https://github.com/AndresR1010">Andres Rosales</a><br>
 <a href="https://github.com/hanzhang52">Han Zhang</a>
 
 ## API's
 
-<a href="https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/">ExerciseDB</a>
+<a href="https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/">ExerciseDB</a><br>
 <a href="https://rapidapi.com/principalapis/api/body-mass-index-bmi-calculator/">Body Mass Index (BMI) Calculator</a>
