@@ -176,7 +176,7 @@ $("#lowerArms").click(function () {
 
 // Find body part: upper arms
 $("#upperArms").click(function () {
-  var selection = "upper%20Arms";
+  var selection = "upper%20arms";
   // Get body part exercise list
   const settings = {
     async: true,
@@ -220,7 +220,7 @@ $("#upperArms").click(function () {
 
 // Find body part: lower legs
 $("#lowerLegs").click(function () {
-  var selection = "lower%20Legs";
+  var selection = "lower%20legs";
   // Get body part exercise list
   const settings = {
     async: true,
@@ -264,7 +264,7 @@ $("#lowerLegs").click(function () {
 
 // Find body part: upper legs
 $("#upperLegs").click(function () {
-  var selection = "upper%20Legs";
+  var selection = "upper%20legs";
   // Get body part exercise list
   const settings = {
     async: true,
