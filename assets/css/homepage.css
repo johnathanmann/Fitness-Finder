@@ -36,7 +36,6 @@
 
   .box {
     width: 17vw;
-    height: 27vh;
     margin: 0px 30px;
   }
 
@@ -73,17 +72,23 @@
     padding-bottom: 60px;
     border-bottom: 2px solid #FFF;
   }
+  @media (max-width: 1440px) {
+    #homeIcons{
+      width: auto;
+    }
+    .box {
+      margin: 10px 20px;
+    }
+  }
   @media (max-width: 768px) {
     .box {
       width: 40vw;
-      height: 27vh;
       margin: 10px 20px;
     }
 }
   @media (max-width: 426px) {
     .box {
       width: 40vw;
-      height: 27vh;
       margin: 10px 20px;
     }
 }
@@ -91,7 +96,6 @@
 @media (max-width: 376px) {
   .box {
     width: 90vw;
-    height: 27vh;
     margin: 10px 20px;
   }
 }
