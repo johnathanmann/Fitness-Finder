@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
     window.localStorage.getItem('waist');
     var savedCard = JSON.parse(window.localStorage.getItem('waist'));
     saved.append(savedCard);
+    window.localStorage.getItem('neck');
+    var savedCard = JSON.parse(window.localStorage.getItem('neck'));
+    saved.append(savedCard);
     // Equipment Saves
     window.localStorage.getItem('band');
     var savedCard = JSON.parse(window.localStorage.getItem('band'));
